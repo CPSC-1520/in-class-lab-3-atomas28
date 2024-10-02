@@ -29,5 +29,30 @@ resources.addEventListener('mouseover',function(event){
 })
 
 
+//STEP 3
+// 1. You see an issue with your application. The idea is that you only want to bold the text of the
+// item you are hovering over. In the image below, all links get highlighted when you hover your
+// mouse over the other items in the list. You need to fix this (probably with another event listener
+// of mouseout).
+// a. Image of current functionality.
+
+
+// 2. Add another event listener on the div list group selected in the first step (the last section) that
+// listens to mouseout events.
+
+let listGroup = document.querySelector(".list-group");
+console.log(listGroup);
+
+listGroup.addEventListener('mouseout', function(event){
+    event.target.classList.remove("fw-bold")
+});
+
+// 3. In the event handler, on the event.target use the method “classList.remove” to remove the class
+// named “fw-bold.” The handler will now remove the class when you move away from an item in
+// the list.
+// a. When you test the third item (after hovering over the other items) it should now look
+// something like this.
+
+
 
 

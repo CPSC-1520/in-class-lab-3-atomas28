@@ -53,7 +53,11 @@ listGroup.addEventListener('mouseout', function(event){
 // a. When you test the third item (after hovering over the other items) it should now look
 // something like this.
 
+//Step 4
 
+listGroup.addEventListener('click' , function(event){
+    event.target.classList.add("fst-italic")
+});
 
 
 
